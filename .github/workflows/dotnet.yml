@@ -31,4 +31,4 @@ jobs:
     - name: Test
       run: |
         cd HomeWork1/TestHomework1
-        dotnet test --no-build --verbosity normal
+        dotnet test --logger trx --results-directory "TestResults"
