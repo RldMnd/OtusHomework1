@@ -22,13 +22,13 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: |
-        cd HomeWork1
+        cd OtusHomework1/HomeWork1
         dotnet restore    
     - name: Build
       run: |
-        cd HomeWork1
+        cd OtusHomework1/HomeWork1
         dotnet build --no-restore
     - name: Test
       run: |
-        cd HomeWork1
+        cd OtusHomework1/HomeWork1
         dotnet test --no-build --verbosity normal
