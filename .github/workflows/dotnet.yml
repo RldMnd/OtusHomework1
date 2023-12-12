@@ -26,9 +26,9 @@ jobs:
         dotnet restore    
     - name: Build
       run: |
-        cd OtusHomework1/HomeWork1
+        cd HomeWork1/HomeWork1
         dotnet build --no-restore
     - name: Test
       run: |
-        cd OtusHomework1/HomeWork1
+        cd HomeWork1/TestHomework1
         dotnet test --no-build --verbosity normal
