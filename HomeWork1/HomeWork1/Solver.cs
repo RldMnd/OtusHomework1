@@ -10,7 +10,7 @@ namespace HomeWork1
     {
         public int Test()
         {
-            return 1;
+            return 2;
         }
     }
 }
