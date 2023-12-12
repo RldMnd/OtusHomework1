@@ -10,18 +10,20 @@ namespace HomeWork1
     {
         public int Test()
         {
-            return 2;
+            return 1;
         }
 
-        public double[] Solve(double a,double b,double c)
+        public double[] Solve(double a, double b, double c)
         {
-            var res=new Double[2];
             var discriminant = b * b - 4 * a * c;
             if (discriminant < 0)
             {
                 //Отрицательеый дискриминат - уравнение не имеет действительных корней
                 return new double[0];
             }
+            var res = new Double[2];
+            res[0] = (-b + Math.Sqrt(discriminant)) / 2 / a;
+            res[1] = (-b - Math.Sqrt(discriminant)) / 2 / a;
             return res;
         }
     }
