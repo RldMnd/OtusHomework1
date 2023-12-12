@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: |
-        cd OtusHomework1/HomeWork1
+        cd HomeWork1/HomeWork1
         dotnet restore    
     - name: Build
       run: |
